@@ -10,11 +10,21 @@ class ActionProvider {
     this.updateChatbotState(greetingMessage)
   }
 
-  handleJavascriptList = () => {
+  handlePortfolioList = () => {
     const message = this.createChatBotMessage(
-      "Fantastic, I've got the following resources for you on Javascript:",
+      "Fantastic, I've got the following resources for you on my portfolio:",
       {
-        widget: "javascriptLinks",
+        widget: "portfolioLinks",
+      }
+    );
+    this.updateChatbotState(message);
+  };
+
+  handleSocialMediaList = () => {
+    const message = this.createChatBotMessage(
+      "Fantastic, I've got the following resources for my social media:",
+      {
+        widget: "socialMediaLinks",
       }
     );
     this.updateChatbotState(message);

@@ -11,8 +11,12 @@ class MessageParser {
             this.actionProvider.greet();
         }
 
-        if(lowerCaseMessage.includes("javascript")){
-            this.actionProvider.handleJavascriptList();
+        if(lowerCaseMessage.includes("portfolio")){
+            this.actionProvider.handlePortfolioList();
+        }
+
+        if(lowerCaseMessage.includes("social media")){
+            this.actionProvider.handleSocialMediaList();
         }
     }
 }

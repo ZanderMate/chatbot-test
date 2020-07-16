@@ -7,11 +7,15 @@ import "./LearningOptions.css";
 const LearningOptions = (props) => {
   const options = [
     {
-      text: "Javascript",
-      handler: props.actionProvider.handleJavascriptList,
+      text: "Portfolio",
+      handler: props.actionProvider.handlePortfolioList,
       id: 1
     },
-    { text: "Data visualization", handler: () => { }, id: 2 },
+    {
+      text: "Social Media",
+      handler: props.actionProvider.handleSocialMediaList,
+      id: 2
+    },
     { text: "APIs", handler: () => { }, id: 3 },
     { text: "Security", handler: () => { }, id: 4 },
     { text: "Interview prep", handler: () => { }, id: 5 },
